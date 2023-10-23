@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Red from './Components/Red.jsx'
+import Blue from './Components/Blue.jsx'
+import Home from './Components/Home.jsx'
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'
 
@@ -11,14 +13,20 @@ function App() {
     <>
      <div id="container">
       <div id="navbar">      
+      <Link to="/">Go Home</Link>
       <Link to="/blue">Go Blue</Link>
       <Link to="/red">Go Red</Link></div>
       <div id="main-section">
         <Routes>
-          <Route path="/blue" element={<h1>BLUE</h1>} />
-          <Route path="/red" element={<h1>RED</h1>} />
+          <Route path="/blue" element={<Blue />} />
+          <Route path="/red" element={<Red />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <div id="footer">      
+      <Link to="/">Go Home</Link>
+      <Link to="/blue">Go Blue</Link>
+      <Link to="/red">Go Red</Link></div>
     </div>
     </>
   )

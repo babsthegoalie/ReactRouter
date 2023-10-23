@@ -20,8 +20,15 @@ body > div {
 }
 
 #navbar {
-  padding: 2em;
+  padding: 1em;
   justify-content: space-evenly;
+  background-color: dimgrey;
+
+}
+#footer {
+  padding: 1em;
+  justify-content: space-evenly;
+  background-color: dimgrey;
 }
 
 #main-section {
@@ -43,4 +50,18 @@ body > div {
 .blue {
   background-color: #275db3;
   color: white;
+}
+
+.home {
+  background-color: #7428a0;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
